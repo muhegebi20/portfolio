@@ -1,0 +1,145 @@
+{
+  "header": {
+    "name": "Muhammedamin Gebi Sinkero",
+    "title": "Computer Engineering Student / Backend-Focused Developer",
+    "location": "Bursa, Türkiye",
+    "email": "muhegebi2021@gmail.com",
+    "phone": "+905344154918",
+    "links": {
+      "linkedin": "",
+      "github": "",
+      "resume": ""
+    }
+  },
+  "home": {
+    "blurb": "Computer Engineering student with hands-on experience in backend development, system design, and full-stack applications. Focused on building scalable and clean architecture systems.",
+    "tech_stack": [
+      "Python",
+      "Node.js",
+      "C#",
+      "PostgreSQL",
+      "MongoDB",
+      "React",
+      "Docker",
+      "AWS"
+    ]
+  },
+  "skills": {
+    "languages": [
+      "Python",
+      "JavaScript (Node.js)",
+      "C#",
+      "SQL"
+    ],
+    "frameworks": [
+      "React",
+      "Express",
+      "ASP.NET Core",
+      "Entity Framework"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "SQL Server",
+      "SQLite"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Postman",
+      "Swagger",
+      "Docker",
+      "Keycloak",
+      "OAuth2",
+      "OIDC"
+    ]
+  },
+  "projects": [
+    {
+      "name": "DepremKit",
+      "description": "AI-powered mobile app to help users organize emergency preparedness kits for earthquakes and disasters.",
+      "tech_stack": ["React Native", "SQLite"],
+      "link": ""
+    },
+    {
+      "name": "CDC Data Pipeline System",
+      "description": "Implemented a Change Data Capture system with automated synchronization between SQL and NoSQL databases with low latency and reporting capabilities.",
+      "tech_stack": ["PostgreSQL", "MongoDB", "Python", "SQLAlchemy"],
+      "link": ""
+    },
+    {
+      "name": "Hotel Management System",
+      "description": "Team-based project implementing a hotel management system using MVC architecture with full CRUD operations and MongoDB integration.",
+      "tech_stack": ["C#", "Windows Forms", "MongoDB"],
+      "link": ""
+    },
+    {
+      "name": "Unmanned Ground Vehicle",
+      "description": "Worked on embedded system integrating hardware and software for movement control and obstacle detection.",
+      "tech_stack": ["Raspberry Pi", "Python", "Sensors", "Motor Drivers"],
+      "link": ""
+    },
+    {
+      "name": "RepoFlow",
+      "description": "Hybrid Project Management and Version Control System built with Clean Architecture, featuring secure authentication and modular backend design.",
+      "tech_stack": ["ASP.NET Core", "Keycloak", "JWT", "Clean Architecture"],
+      "link": ""
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Developer Intern",
+      "company": "Alphastellar",
+      "location": "Bursa, Türkiye",
+      "period": "March 2026 - Present",
+      "responsibilities": [
+        "Built a hybrid project management and version control system (RepoFlow) from scratch",
+        "Implemented authentication using Keycloak (OAuth2/OIDC) with JWT tokens",
+        "Designed automatic user synchronization from identity provider",
+        "Applied Repository Pattern and Dependency Injection for clean architecture"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Uludag University",
+      "degree": "Bachelor of Computer Engineering",
+      "location": "Bursa, Türkiye",
+      "period": "2022 - Present",
+      "expected_graduation": "July 2026"
+    },
+    {
+      "institution": "University of Silesia",
+      "program": "Erasmus Exchange Program",
+      "location": "Katowice, Poland",
+      "period": "Sep 2024 - Feb 2025"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Türkiye Scholarship",
+      "period": "Sep 2022 - Present"
+    },
+    {
+      "title": "Erasmus Plus Exchange",
+      "period": "Sep 2024 - Feb 2025"
+    },
+    {
+      "title": "AI-Powered Earthquake Solutions Hackathon - 2nd Place",
+      "period": "May 2025"
+    }
+  ],
+  "contact": {
+    "email": "muhegebi2021@gmail.com",
+    "form_fields": ["name", "email", "subject", "message"],
+    "scheduling_link": ""
+  },
+  "footer": {
+    "copyright": "© 2026 Muhammedamin Gebi Sinkero. All rights reserved.",
+    "socials": {
+      "github": "",
+      "linkedin": "",
+      "twitter": ""
+    }
+  }
+}
