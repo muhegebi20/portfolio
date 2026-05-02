@@ -20,7 +20,7 @@ export function Experience({ experience }: ExperienceProps) {
               <div className="text-text-secondary text-sm">{exp.period}</div>
             </div>
 
-            <ul className="mt-4 list-disc list-inside text-text-secondary text-sm space-y-2">
+            <ul className="mt-4 list-disc list-outside ml-4 text-text-secondary text-sm space-y-2">
               {exp.responsibilities.map((r, idx) => (
                 <li key={idx}>{r}</li>
               ))}
