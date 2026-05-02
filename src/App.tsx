@@ -4,6 +4,8 @@ import { Navbar } from './components/layout/Navbar'
 import { Footer } from './components/layout/Footer'
 import { Hero } from './sections/home/Hero'
 import { Skills } from './sections/skills/Skills'
+import { Projects } from './sections/projects/Projects'
+import { Experience } from './sections/experience/Experience'
 
 function App() {
   const data: Portfolio = portfolioData as Portfolio
@@ -20,6 +22,8 @@ function App() {
         />
 
         <Skills skills={data.skills} />
+        <Projects projects={data.projects} />
+        <Experience experience={data.experience} />
       </main>
 
       <Footer footer={data.footer} header={data.header} />
