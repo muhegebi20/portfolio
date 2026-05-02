@@ -3,6 +3,7 @@ import portfolioData from './data/portfolio.json'
 import { Navbar } from './components/layout/Navbar'
 import { Footer } from './components/layout/Footer'
 import { Hero } from './sections/home/Hero'
+import { Skills } from './sections/skills/Skills'
 
 function App() {
   const data: Portfolio = portfolioData as Portfolio
@@ -17,6 +18,8 @@ function App() {
           name={data.header.name} 
           email={data.header.email}
         />
+
+        <Skills skills={data.skills} />
       </main>
 
       <Footer footer={data.footer} header={data.header} />
