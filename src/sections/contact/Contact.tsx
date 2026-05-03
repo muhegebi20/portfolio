@@ -5,7 +5,7 @@ interface ContactProps {
   contact: ContactType
 }
 
-export function Contact({ contact }: ContactProps) {
+export function Contact({  }: ContactProps) {
   const [result, setResult] = useState('')
   const [loading, setLoading] = useState(false)
 
