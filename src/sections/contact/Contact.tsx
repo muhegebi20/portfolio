@@ -14,7 +14,7 @@ export function Contact({ contact }: ContactProps) {
     setLoading(true)
     
     const formData = new FormData(event.currentTarget)
-    formData.append('access_key', '683cad1f-f1a3-4ef0-bdda-34d09348272a')
+    formData.append('access_key', import.meta.env.VITE_WEB3FORMS_KEY || '')
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
