@@ -1,4 +1,5 @@
 import heroImg from '../../assets/myphoto.jpeg'
+import resumePdf from '../../assets/Muhammedamin_Gebi Sinkero_Resume1.pdf'
 import type { Home } from '../../types'
 
 interface HeroProps {
@@ -7,15 +8,14 @@ interface HeroProps {
   email: string
 }
 
-export function Hero({ home, name, email }: HeroProps) {
+export function Hero({ home, email }: HeroProps) {
   return (
-    <section id="home" className="section pt-20 md:pt-32">
+    <section id="home" className="section pt-12 md:pt-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="order-2 md:order-1">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="text-neon-lime">Perfect Designing</span> Starts
-            Here!
+            <span className="text-neon-lime">Muhammedamin Gebi</span>
           </h1>
 
           <p className="text-lg leading-relaxed mb-6 text-text-secondary">
@@ -41,8 +41,8 @@ export function Hero({ home, name, email }: HeroProps) {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#projects" className="btn-primary text-center">
-              See My Work
+            <a href={resumePdf} download className="btn-primary text-center">
+              Resume
             </a>
             <a href={`mailto:${email}`} className="btn-secondary text-center">
               Contact Me

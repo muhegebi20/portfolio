@@ -9,7 +9,7 @@ export function Projects({ projects }: ProjectsProps) {
     <section id="projects" className="section">
       <h2 className="section-title">Featured Projects</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {projects.map((p) => (
           <article key={p.name}  className="card text-left">
             <h3 className="text-lg font-semibold text-white mb-2">{p.name}</h3>

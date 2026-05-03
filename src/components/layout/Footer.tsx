@@ -76,14 +76,6 @@ export function Footer({ footer, header }: FooterProps) {
                   {header.email}
                 </a>
               </li>
-              <li>
-                <a
-                  href={`tel:${header.phone}`}
-                  className="text-text-secondary hover:text-neon-lime transition-colors text-sm"
-                >
-                  {header.phone}
-                </a>
-              </li>
               <li className="text-text-secondary text-sm">{header.location}</li>
             </ul>
           </div>
@@ -91,7 +83,7 @@ export function Footer({ footer, header }: FooterProps) {
 
         {/* Social Links & Copyright */}
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex flex-col md:flex-col justify-between items-center gap-6">
             {/* Social Icons */}
             <div className="flex gap-4">
               {socialLinks.map((social) => (

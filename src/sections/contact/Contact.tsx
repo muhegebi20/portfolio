@@ -39,7 +39,7 @@ export function Contact({ contact }: ContactProps) {
 
   return (
     <section id="contact" className="section">
-      <h2 className="section-title">Initiate Connection</h2>
+      <h2 className="section-title">Contact Me</h2>
 
       <div className="max-w-2xl mx-auto">
         <p className="text-text-secondary text-center mb-8">
@@ -106,25 +106,6 @@ export function Contact({ contact }: ContactProps) {
             {loading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-800">
-          <div className="text-center">
-            <p className="text-text-secondary text-sm mb-2">Email</p>
-            <a href={`mailto:${contact.email}`} className="text-neon-lime hover:underline text-sm">
-              {contact.email}
-            </a>
-          </div>
-          <div className="text-center">
-            <p className="text-text-secondary text-sm mb-2">Phone</p>
-            <a href="tel:+905344154918" className="text-neon-lime hover:underline text-sm">
-              +90 534 415 4918
-            </a>
-          </div>
-          <div className="text-center col-span-2 md:col-span-1">
-            <p className="text-text-secondary text-sm mb-2">Location</p>
-            <p className="text-neon-lime text-sm">Bursa, Türkiye</p>
-          </div>
-        </div>
       </div>
     </section>
   )

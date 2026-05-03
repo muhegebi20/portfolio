@@ -4,19 +4,19 @@
     "title": "Computer Engineering Student / Backend-Focused Developer",
     "location": "Bursa, Türkiye",
     "email": "muhegebi2021@gmail.com",
-    "phone": "+905344154918",
+    "phone": "",
     "links": {
-      "linkedin": "",
-      "github": "",
+      "linkedin": "https://www.linkedin.com/in/muhammedamin-s-609a08222/",
+      "github": "https://www.github.com/muhegebi20",
       "resume": ""
     }
   },
   "home": {
     "blurb": "Computer Engineering student with hands-on experience in backend development, system design, and full-stack applications. Focused on building scalable and clean architecture systems.",
     "tech_stack": [
+        "ASP.NET Core",
+        "Node.js",
       "Python",
-      "Node.js",
-      "C#",
       "PostgreSQL",
       "MongoDB",
       "React",
@@ -26,16 +26,16 @@
   },
   "skills": {
     "languages": [
-      "Python",
-      "JavaScript (Node.js)",
-      "C#",
-      "SQL"
+        "C#",
+        "JavaScript (Node.js)",
+        "SQL",
+      "Python"
     ],
     "frameworks": [
-      "React",
-      "Express",
-      "ASP.NET Core",
-      "Entity Framework"
+        "ASP.NET Core",
+        "Entity Framework",
+        "Express",
+        "React"
     ],
     "databases": [
       "PostgreSQL",
@@ -59,24 +59,24 @@
       "name": "DepremKit",
       "description": "AI-powered mobile app to help users organize emergency preparedness kits for earthquakes and disasters.",
       "tech_stack": ["React Native", "SQLite"],
-      "link": ""
+      "link": "https://github.com/depremind/depremkit"
     },
     {
       "name": "CDC Data Pipeline System",
       "description": "Implemented a Change Data Capture system with automated synchronization between SQL and NoSQL databases with low latency and reporting capabilities.",
       "tech_stack": ["PostgreSQL", "MongoDB", "Python", "SQLAlchemy"],
-      "link": ""
+      "link": "https://github.com/muhegebi20/CDC_Project"
     },
     {
       "name": "Hotel Management System",
       "description": "Team-based project implementing a hotel management system using MVC architecture with full CRUD operations and MongoDB integration.",
       "tech_stack": ["C#", "Windows Forms", "MongoDB"],
-      "link": ""
+      "link": "https://github.com/muhegebi20/hotel-mangement-system"
     },
     {
       "name": "Unmanned Ground Vehicle",
       "description": "Worked on embedded system integrating hardware and software for movement control and obstacle detection.",
-      "tech_stack": ["Raspberry Pi", "Python", "Sensors", "Motor Drivers"],
+      "tech_stack": [ "Python", "Raspberry Pi", "Sensors", "Motor Drivers"],
       "link": ""
     },
     {
@@ -137,8 +137,8 @@
   "footer": {
     "copyright": "© 2026 Muhammedamin Gebi Sinkero. All rights reserved.",
     "socials": {
-      "github": "",
-      "linkedin": "",
+      "github": "https://www.github.com/muhegebi20",
+      "linkedin": "https://www.linkedin.com/in/muhammedamin-s-609a08222/",
       "twitter": ""
     }
   }
