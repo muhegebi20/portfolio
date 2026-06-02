@@ -9,28 +9,40 @@ export function Projects({ projects }: ProjectsProps) {
     <section id="projects" className="section">
       <h2 className="section-title">Featured Projects</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((p) => (
-          <article key={p.name}  className="card text-left">
-            <h3 className="text-lg font-semibold text-white mb-2">{p.name}</h3>
-            <p className="text-text-secondary text-sm mb-4">{p.description}</p>
-
-            <div className="flex flex-wrap gap-2 mb-4">
-              {p.tech_stack.map((t) => (
-                <span key={t} className="badge">{t}</span>
-              ))}
+          <article key={p.name} className="card text-left overflow-hidden p-0">
+            {/* Project Image */}
+            <div className="relative w-full h-48 overflow-hidden border-b border-gray-800">
+              <img
+                src={`/projects/${p.image}`}
+                alt={p.name}
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
             </div>
 
-            <div className="flex gap-2">
-              {p.link ? (
-                <a href={p.link} target="_blank" rel="noopener noreferrer" className="px-4 py-1.5 bg-neon-lime text-black text-xs font-semibold rounded hover:bg-white transition-all duration-200 inline-block">
-                  View
-                </a>
-              ) : (
-                <button className="px-4 py-1.5 bg-neon-lime text-black text-xs font-semibold rounded opacity-50 cursor-not-allowed inline-block" disabled>
-                  View
-                </button>
-              )}
+            {/* Project Content */}
+            <div className="p-6">
+              <h3 className="text-lg font-semibold text-white mb-2">{p.name}</h3>
+              <p className="text-text-secondary text-sm mb-4">{p.description}</p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {p.tech_stack.map((t) => (
+                  <span key={t} className="badge">{t}</span>
+                ))}
+              </div>
+
+              <div className="flex gap-2">
+                {p.link ? (
+                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="px-4 py-1.5 bg-neon-lime text-black text-xs font-semibold rounded hover:bg-white transition-all duration-200 inline-block">
+                    View Project
+                  </a>
+                ) : (
+                  <button className="px-4 py-1.5 bg-neon-lime text-black text-xs font-semibold rounded opacity-50 cursor-not-allowed inline-block" disabled>
+                    View Project
+                  </button>
+                )}
+              </div>
             </div>
           </article>
         ))}

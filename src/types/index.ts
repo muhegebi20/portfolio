@@ -27,6 +27,7 @@ export interface Project {
   name: string;
   description: string;
   tech_stack: string[];
+  image: string;
   link: string;
 }
 
