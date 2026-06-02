@@ -7,7 +7,6 @@ import { Skills } from './sections/skills/Skills'
 import { Projects } from './sections/projects/Projects'
 import { Experience } from './sections/experience/Experience'
 import { Contact } from './sections/contact/Contact'
-
 function App() {
   const data: Portfolio = portfolioData as Portfolio
 

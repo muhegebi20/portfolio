@@ -59,7 +59,7 @@
     {
       "name": "Hotel Business Website",
       "description": "A modern, responsive hotel website template designed for small and medium-sized hotels. Features room showcases, image galleries, WhatsApp booking integration, inquiry forms, Google Maps location display, and mobile-first design. Built with a focus on increasing direct customer inquiries and creating a professional online presence.",
-      "tech_stack": "TypeScript, ReactJs, TailwindCss",
+      "tech_stack": ["TypeScript", "ReactJs", "TailwindCss"],
       "link": "https://hotel-demo-olive.vercel.app"
     },
     {
