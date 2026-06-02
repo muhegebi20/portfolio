@@ -53,8 +53,15 @@
       "OAuth2",
       "OIDC"
     ]
+    
   },
   "projects": [
+    {
+      "name": "Hotel Business Website",
+      "description": "A modern, responsive hotel website template designed for small and medium-sized hotels. Features room showcases, image galleries, WhatsApp booking integration, inquiry forms, Google Maps location display, and mobile-first design. Built with a focus on increasing direct customer inquiries and creating a professional online presence.",
+      "tech_stack": "TypeScript, ReactJs, TailwindCss",
+      "link": "https://hotel-demo-olive.vercel.app"
+    },
     {
       "name": "DepremKit",
       "description": "AI-powered mobile app to help users organize emergency preparedness kits for earthquakes and disasters.",
@@ -72,12 +79,6 @@
       "description": "Team-based project implementing a hotel management system using MVC architecture with full CRUD operations and MongoDB integration.",
       "tech_stack": ["C#", "Windows Forms", "MongoDB"],
       "link": "https://github.com/muhegebi20/hotel-mangement-system"
-    },
-    {
-      "name": "Unmanned Ground Vehicle",
-      "description": "Worked on embedded system integrating hardware and software for movement control and obstacle detection.",
-      "tech_stack": [ "Python", "Raspberry Pi", "Sensors", "Motor Drivers"],
-      "link": ""
     },
     {
       "name": "RepoFlow",
