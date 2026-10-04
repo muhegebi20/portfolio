@@ -19,12 +19,13 @@ function App() {
           home={data.home} 
           name={data.header.name} 
           email={data.header.email}
+          resume={data.header.links}
         />
 
-        <Skills skills={data.skills} />
+        <Skills skills={data.skills} languages={data.languages} />
         <Projects projects={data.projects} />
         <Experience experience={data.experience} />
-        <Contact contact={data.contact} />
+        <Contact contact={data.contact} resume={data.header.links} />
       </main>
 
       <Footer footer={data.footer} header={data.header} />

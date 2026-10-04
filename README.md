@@ -63,7 +63,7 @@ formData.append('access_key', 'YOUR_ACCESS_KEY_HERE')
 Social Links
 Update GitHub, LinkedIn, and Twitter URLs in src/data/portfolio.json under header.links and footer.socials.
 Resume
-Place your resume PDF in src/assets/ and update the import in src/sections/home/Hero.tsx.
+Host each resume PDF on Google Drive (or anywhere with a direct link) and paste the link into header.links.resume_en and header.links.resume_tr in src/data/portfolio.json. A button appears in the hero only for languages that have a link. Replacing the PDF in Drive (Manage versions → Upload new version) keeps the same link.
 Design
 - Theme: Dark background (#0a0a0a) with neon-lime accent (#bfff00)
 - Responsive: Mobile-first with breakpoints at md (768px) and lg (1024px)

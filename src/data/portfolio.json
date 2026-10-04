@@ -1,21 +1,22 @@
 {
   "header": {
     "name": "Muhammedamin Gebi Sinkero",
-    "title": "Computer Engineering Student / Backend-Focused Developer",
+    "title": "Software Developer | Computer Engineer",
     "location": "Bursa, Türkiye",
     "email": "muhegebi2021@gmail.com",
     "phone": "",
     "links": {
       "linkedin": "https://www.linkedin.com/in/muhammedamin-s-609a08222/",
       "github": "https://www.github.com/muhegebi20",
-      "resume": ""
+      "resume_en": "https://drive.google.com/file/d/1GGziOiHAxQdPdrdVhf7Y6SChK1Dcv6tw/view",
+      "resume_tr": "https://drive.google.com/file/d/1T5_oMoIQBJs9qGSas5XhQiZDkWSMoNwq/view"
     }
   },
   "home": {
-    "blurb": "Computer Engineering student with hands-on experience in backend development, system design, and full-stack applications. Focused on building scalable and clean architecture systems.",
+    "blurb": "Computer Engineering graduate and software developer with backend internship experience at Hyper Company. Builds AI-powered full-stack platforms and scalable systems with ASP.NET Core, Clean Architecture and Domain-Driven Design.",
     "tech_stack": [
-        "ASP.NET Core",
-        "Node.js",
+      "ASP.NET Core",
+      "Node.js",
       "Python",
       "PostgreSQL",
       "MongoDB",
@@ -26,16 +27,22 @@
   },
   "skills": {
     "languages": [
-        "C#",
-        "JavaScript (Node.js)",
-        "SQL",
-      "Python"
+      "C#",
+      "JavaScript (Node.js)",
+      "TypeScript",
+      "SQL",
+      "Python",
+      "C/C++"
     ],
     "frameworks": [
-        "ASP.NET Core",
-        "Entity Framework",
-        "Express",
-        "React"
+      "ASP.NET Core",
+      "Entity Framework",
+      "Express",
+      "React",
+      "Angular",
+      "Next.js",
+      "Node.js",
+      "SignalR"
     ],
     "databases": [
       "PostgreSQL",
@@ -46,16 +53,33 @@
     "tools": [
       "Git",
       "GitHub",
+      "GitHub Actions",
       "Postman",
       "Swagger",
       "Docker",
       "Keycloak",
       "OAuth2",
-      "OIDC"
+      "OIDC",
+      "xUnit",
+      "Moq",
+      "Jira",
+      "OpenCV",
+      "OCR"
     ]
-    
   },
+  "languages": [
+    { "name": "Turkish", "level": "C1" },
+    { "name": "English", "level": "C1" },
+    { "name": "Polish", "level": "A2" }
+  ],
   "projects": [
+    {
+      "name": "PECS: Prompt Engineering Competency Assessment Platform",
+      "description": "LLM-powered prompt engineering competency assessment platform, built as a capstone project with a teammate. Integrated Google OAuth 2.0 and JWT authentication, and optimized EF Core queries with AsNoTracking and AsSplitQuery to improve the LLM integration layer.",
+      "tech_stack": ["Angular", "ASP.NET Core", "PostgreSQL", "Google OAuth 2.0", "JWT"],
+      "image": "",
+      "link": "https://github.com/xash3000/PECS"
+    },
     {
       "name": "Hotel Business Website",
       "description": "A modern, responsive hotel website template designed for small and medium-sized hotels. Features room showcases, image galleries, WhatsApp booking integration, inquiry forms, Google Maps location display, and mobile-first design. Built with a focus on increasing direct customer inquiries and creating a professional online presence.",
@@ -65,8 +89,8 @@
     },
     {
       "name": "DepremKit",
-      "description": "AI-powered mobile app to help users organize emergency preparedness kits for earthquakes and disasters.",
-      "tech_stack": ["React Native", "SQLite"],
+      "description": "Mobile application offering machine learning-based personalized emergency kit recommendations for earthquakes and disasters. Built for the Digital Earthquake Hackathon, where it won 2nd place.",
+      "tech_stack": ["React Native", "Node.js", "REST APIs", "SQLite"],
       "image": "depremkit.jpg",
       "link": "https://github.com/depremind/depremkit"
     },
@@ -94,29 +118,47 @@
   ],
   "experience": [
     {
-      "role": "Software Developer Intern",
-      "company": "Alphastellar",
+      "role": "Software Engineer Intern",
+      "company": "Hyper",
       "location": "Bursa, Türkiye",
-      "period": "March 2026 - Present",
+      "period": "Jul 2026 - Aug 2026",
       "responsibilities": [
-        "Built a hybrid project management and version control system (RepoFlow) from scratch",
-        "Implemented authentication using Keycloak (OAuth2/OIDC) with JWT tokens",
-        "Designed automatic user synchronization from identity provider",
-        "Applied Repository Pattern and Dependency Injection for clean architecture"
+        "Built an AI-powered full-stack recruitment platform using ASP.NET Core 9, SQL Server and Angular",
+        "Developed an end-to-end resume processing pipeline covering PDF/OCR extraction, Gemini and Ollama integration, data normalization and candidate deduplication by email/phone; tested the services with xUnit and Moq",
+        "Optimized LLM-based candidate matching with a ProfileContext structure built during ingestion, cutting token usage per query by 80% while preserving matching quality"
+      ]
+    },
+    {
+      "role": "Backend Developer Intern",
+      "company": "Hyper",
+      "location": "Bursa, Türkiye",
+      "period": "Mar 2026 - Jun 2026",
+      "responsibilities": [
+        "Designed and built the backend architecture of a platform combining issue tracking and file versioning with ASP.NET Core and EF Core, following Clean Architecture and Domain-Driven Design principles",
+        "Developed a Git-like versioning system based on the Myers Diff algorithm that stores only file changes, optimizing PostgreSQL storage usage and enabling code review support",
+        "Implemented JWT-based authentication and role-based authorization with Keycloak, and a real-time notification layer with SignalR; refined design decisions through feedback from weekly code reviews"
+      ]
+    },
+    {
+      "role": "Computer Vision Developer – Teknofest Autonomous UGV Project",
+      "company": "TerraTrack Technology Team",
+      "location": "Bursa, Türkiye",
+      "period": "Feb 2023 - Aug 2023",
+      "responsibilities": [
+        "Developed real-time computer vision algorithms with Python and OpenCV; contributed to communication between Raspberry Pi, Jetson Nano and sensors, obstacle avoidance and mission integration"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Uludag University",
-      "degree": "Bachelor of Computer Engineering",
+      "institution": "Bursa Uludağ University",
+      "degree": "B.Sc. in Computer Engineering",
       "location": "Bursa, Türkiye",
-      "period": "2022 - Present",
-      "expected_graduation": "July 2026"
+      "period": "2022 - 2026"
     },
     {
       "institution": "University of Silesia",
-      "program": "Erasmus Exchange Program",
+      "program": "Erasmus+ Exchange Programme",
       "location": "Katowice, Poland",
       "period": "Sep 2024 - Feb 2025"
     }

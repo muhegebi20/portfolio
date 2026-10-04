@@ -7,7 +7,8 @@ export interface Header {
   links: {
     linkedin: string;
     github: string;
-    resume: string;
+    resume_en: string;
+    resume_tr: string;
   };
 }
 
@@ -21,6 +22,11 @@ export interface Skills {
   frameworks: string[];
   databases: string[];
   tools: string[];
+}
+
+export interface Language {
+  name: string;
+  level: string;
 }
 
 export interface Project {
@@ -72,6 +78,7 @@ export interface Portfolio {
   header: Header;
   home: Home;
   skills: Skills;
+  languages: Language[];
   projects: Project[];
   experience: Experience[];
   education: Education[];

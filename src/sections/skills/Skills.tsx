@@ -1,10 +1,11 @@
-import type { Skills as SkillsType } from '../../types'
+import type { Language, Skills as SkillsType } from '../../types'
 
 interface SkillsProps {
   skills: SkillsType
+  languages: Language[]
 }
 
-export function Skills({ skills }: SkillsProps) {
+export function Skills({ skills, languages }: SkillsProps) {
   return (
     <section id="skills" className="section">
       <h2 className="section-title">Technical Arsenal</h2>
@@ -57,6 +58,17 @@ export function Skills({ skills }: SkillsProps) {
             ))}
           </ul>
         </div>
+      </div>
+
+      <div className="card mt-6">
+        <h3 className="text-neon-lime font-semibold mb-3">Languages</h3>
+        <ul className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-text-secondary">
+          {languages.map((l) => (
+            <li key={l.name}>
+              <span className="text-white">{l.name}</span> · {l.level}
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )

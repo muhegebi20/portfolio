@@ -1,14 +1,15 @@
 import heroImg from '../../assets/myphoto.jpeg'
-import resumePdf from '../../assets/Muhammedamin_Gebi Sinkero_Resume1.pdf'
-import type { Home } from '../../types'
+import { ResumeMenu } from '../../components/ui/ResumeMenu'
+import type { Header, Home } from '../../types'
 
 interface HeroProps {
   home: Home
   name: string
   email: string
+  resume: Header['links']
 }
 
-export function Hero({ home, email }: HeroProps) {
+export function Hero({ home, email, resume }: HeroProps) {
   return (
     <section id="home" className="section pt-12 md:pt-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -40,10 +41,8 @@ export function Hero({ home, email }: HeroProps) {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href={resumePdf} download className="btn-primary text-center">
-              Resume
-            </a>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+            <ResumeMenu resume={resume} />
             <a href={`mailto:${email}`} className="btn-secondary text-center">
               Contact Me
             </a>
