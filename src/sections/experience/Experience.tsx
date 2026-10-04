@@ -9,7 +9,7 @@ export function Experience({ experience }: ExperienceProps) {
     <section id="experience" className="section">
       <h2 className="section-title">Experience</h2>
 
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {experience.map((exp) => (
           <div key={exp.role + exp.company} className="card text-left">
             <div className="flex justify-between items-start">
