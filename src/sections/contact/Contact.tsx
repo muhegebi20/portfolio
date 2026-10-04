@@ -1,13 +1,11 @@
 import { useState } from 'react'
-import { ResumeMenu } from '../../components/ui/ResumeMenu'
-import type { Contact as ContactType, Header } from '../../types'
+import type { Contact as ContactType } from '../../types'
 
 interface ContactProps {
   contact: ContactType
-  resume: Header['links']
 }
 
-export function Contact({ resume }: ContactProps) {
+export function Contact({  }: ContactProps) {
   const [result, setResult] = useState('')
   const [loading, setLoading] = useState(false)
 
@@ -47,10 +45,6 @@ export function Contact({ resume }: ContactProps) {
         <p className="text-text-secondary text-center mb-8">
           Interested in collaborating or want to chat? Feel free to reach out.
         </p>
-
-        <div className="flex justify-center mb-8">
-          <ResumeMenu resume={resume} />
-        </div>
 
         <form onSubmit={onSubmit} className="space-y-6">
           <div>

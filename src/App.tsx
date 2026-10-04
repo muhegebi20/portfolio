@@ -25,7 +25,7 @@ function App() {
         <Skills skills={data.skills} languages={data.languages} />
         <Projects projects={data.projects} />
         <Experience experience={data.experience} />
-        <Contact contact={data.contact} resume={data.header.links} />
+        <Contact contact={data.contact} />
       </main>
 
       <Footer footer={data.footer} header={data.header} />
