@@ -9,9 +9,9 @@ export function Experience({ experience }: ExperienceProps) {
     <section id="experience" className="section">
       <h2 className="section-title">Experience</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-start gap-6">
+      <div className="grid grid-cols-1 gap-6">
         {experience.map((exp) => (
-          <div key={exp.role + exp.company} className="card">
+          <div key={exp.role + exp.company} className="card text-left">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-white font-semibold text-lg">{exp.role}</h3>
@@ -20,7 +20,7 @@ export function Experience({ experience }: ExperienceProps) {
               <div className="text-text-secondary text-sm">{exp.period}</div>
             </div>
 
-            <ul className="mt-3 list-disc list-inside ml-2 text-text-secondary text-sm space-y-2">
+            <ul className="mt-3 list-disc list-outside pl-5 marker:text-neon-lime text-text-secondary text-sm space-y-2">
               {exp.responsibilities.map((r, idx) => (
                 <li key={idx}>{r}</li>
               ))}
